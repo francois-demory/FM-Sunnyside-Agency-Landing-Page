@@ -77,3 +77,118 @@
     display: block;
     margin: 6.5rem auto;
 }
+
+.services {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+
+.services__content {
+    max-width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.services__title {
+    font-family: var(--font-barlow);
+    font-size: 2.6rem;
+    font-weight: 900;
+    color: var(--very-dark-desaturated-blue);
+    font-family: var(--font-fraunces);
+    line-height: 1.3;
+    padding-bottom: 2rem;
+}
+
+.services__desc {
+    font-family: var(--font-barlow);
+    color: var(--dark-grayish-blue);
+    line-height: 1.5;
+    padding-bottom: 3.5rem;
+}
+
+.services__link {
+    text-decoration: none;
+    font-family: var(--font-fraunces);
+    color: var(--very-dark-desaturated-blue);
+    text-transform: uppercase;
+    padding-left: .5rem;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.services__link--yellow::before {
+    content: '';
+    display: inline-block;
+    width: 125px;
+    height: 8px;
+    background-color: var(--yellow);
+    position: absolute;
+    bottom: 9.2rem;
+    left: 8.2rem;
+    opacity: .3;
+}
+
+.services__link--red::before {
+    content: '';
+    display: inline-block;
+    width: 125px;
+    height: 8px;
+    background-color: var(--soft-red);
+    position: absolute;
+    bottom: 9.2rem;
+    right: 29rem;
+    opacity: .3;
+}
+
+.services__image {
+    max-width: 50%;
+}
+
+.services__alternate {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+
+.services__alternate__content {
+    max-width: 50%;
+    height: 600px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+
+.services__alternate__image {
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
+.services__alternate__title {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-family: var(--font-fraunces);
+    font-weight: 900;
+}
+
+.services__alternate__desc {
+    font-size: 1rem;
+    font-family: var(--font-barlow);
+    line-height: 1.6;
+    text-align: center;
+    padding: 2.2rem 11.5rem 3rem 11.5rem;
+    opacity: .8;
+}
+
+.services__alternate__title--green, .services__alternate__desc--green {
+    color: var(--dark-desaturated-cyan);
+}
+
+.services__alternate__title--blue, .services__alternate__desc--blue {
+    color: var(--dark-blue);
+}
