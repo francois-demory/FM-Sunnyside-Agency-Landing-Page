@@ -3,13 +3,14 @@
     --yellow: hsl(51, 100%, 49%);
     --dark-desaturated-cyan: hsl(167, 40%, 24%);
     --dark-blue: hsl(198, 62%, 26%);
-    --dark-moderate-cyan: hsl(168, 34%, 41%);
+    --dark-moderate-cyan: hsl(168, 44%, 70%);
     --very-dark-desaturated-blue: hsl(212, 27%, 19%);
     --very-dark-grayish-blue: hsl(213, 9%, 39%);
     --dark-grayish-blue: hsl(232, 10%, 55%);
     --grayish-blue: hsl(210, 4%, 67%);
     --cyan: hsl(200, 100%, 62%);
     --white: hsl(0, 0%, 100%);
+    --cream: hsl(34, 100%, 99%);
     --font-barlow: 'Barlow', sans-serif;
     --font-fraunces: 'Fraunces', serif;
 }
@@ -33,6 +34,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--cyan);
     padding: 3.5rem 2rem;
 }
@@ -86,6 +88,7 @@
 
 .services__content {
     max-width: 50%;
+    background-color: var(--cream);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -191,4 +194,102 @@
 
 .services__alternate__title--blue, .services__alternate__desc--blue {
     color: var(--dark-blue);
+}
+
+.testimonials {
+    background-color: var(--cream);
+    padding: 10rem 0;
+}
+
+.testimonials__title__main {
+    font-family: var(--font-fraunces);
+    text-transform: uppercase;
+    color: var(--grayish-blue);
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 900;
+    letter-spacing: .5rem;
+    padding-bottom: 8rem;
+}
+
+.testimonials__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.testimonials__content {
+    max-width: 33%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials__image {
+    max-width: 15%;
+    border-radius: 50%;
+}
+
+.testimonials__desc {
+    font-family: var(--font-barlow);
+    line-height: 1.6;
+    padding: 4rem 4rem;
+    text-align: center;
+    color: var(--dark-grayish-blue);
+}
+
+.testimonials__author {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.testimonials__author__name {
+    font-family: var(--font-fraunces);
+    text-align: center;
+    color: var(--very-dark-desaturated-blue);
+    padding-bottom: .8rem;
+}
+
+.testimonials__author__title {
+    font-family: var(--font-barlow);
+    font-size: .9rem;
+    color: var(--grayish-blue);
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.gallery__image {
+    max-width: 25%;
+}
+
+.footer {
+    background-color: var(--dark-moderate-cyan);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__logo{
+    padding: 4rem 0 3rem 0;
+}
+
+.footer__logo path {
+    fill: var(--dark-desaturated-cyan);
+}
+
+.footer__list {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-bottom: 4rem;
+}
+
+.footer__item {
+    padding: 0 1rem;
+    font-family: var(--font-barlow);
+    color: var(--dark-desaturated-cyan);
 }
