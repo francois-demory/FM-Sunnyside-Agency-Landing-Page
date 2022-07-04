@@ -9,6 +9,7 @@
     --dark-grayish-blue: hsl(232, 10%, 55%);
     --grayish-blue: hsl(210, 4%, 67%);
     --cyan: hsl(200, 100%, 62%);
+    --light-cyan: hsl(200, 100%, 72%);
     --white: hsl(0, 0%, 100%);
     --cream: hsl(34, 100%, 99%);
     --font-barlow: 'Barlow', sans-serif;
@@ -27,7 +28,7 @@
 .app {
     max-width: 1440px;
     margin: auto;
-    font-size: 1.125rem;
+    font-size: 1.1rem;
 }
 
 .navbar {
@@ -52,7 +53,21 @@
 }
 
 .navbar__item {
-    padding: 0 2rem;
+    padding: 1.2rem 2rem;
+}
+
+.navbar__item--active {
+    font-family: var(--font-fraunces);
+    color: var(--dark-desaturated-cyan);
+    text-transform: uppercase;
+    background-color: var(--white);
+    border-radius: 45px;
+}
+
+.navbar__item--active:hover {
+    cursor: pointer;
+    background-color: var(--light-cyan);
+    color: var(--white);
 }
 
 .header {
@@ -128,6 +143,7 @@
     display: inline-block;
     width: 125px;
     height: 8px;
+    border-radius: 10px;
     background-color: var(--yellow);
     position: absolute;
     bottom: 9.2rem;
@@ -135,16 +151,25 @@
     opacity: .3;
 }
 
+.services__link--yellow:hover::before {
+    opacity: 1;
+}
+
 .services__link--red::before {
     content: '';
     display: inline-block;
     width: 125px;
     height: 8px;
+    border-radius: 10px;
     background-color: var(--soft-red);
     position: absolute;
     bottom: 9.2rem;
     right: 29rem;
     opacity: .3;
+}
+
+.services__link--red:hover::before {
+    opacity: 1;
 }
 
 .services__image {
@@ -292,4 +317,9 @@
     padding: 0 1rem;
     font-family: var(--font-barlow);
     color: var(--dark-desaturated-cyan);
+    cursor: pointer;
+}
+
+.footer__item path:hover {
+    fill: var(--white);
 }
